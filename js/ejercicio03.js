@@ -9,7 +9,7 @@ document.addEventListener('click', clickRaton);
 document.addEventListener('keydown', teclado);
 
 
-function logKey(e) {
+function logKey(e) {      //evento que se activa al mover el ratón
   screenLog.innerText = 
     "Navegador [" + e.screenX+ ", " + e.screenY + 
     "]\nPágina [" + e.clientX+ ", " + e.clientY + "]";
@@ -17,7 +17,7 @@ function logKey(e) {
     azul[0].style.background= "none";
 }
 
-function clickRaton(e) {
+function clickRaton(e) {  //evento que se activa al hacer click el ratón
     screenLog2.innerText = 
       "Navegador [" + e.screenX+ ", " + e.screenY + 
       "]\nPágina [" + e.clientX+ ", " + e.clientY + "]";
@@ -25,7 +25,7 @@ function clickRaton(e) {
       amarillo[0].style.background= "#FFFFCC";
   }
 
-  function teclado(e){
+  function teclado(e){    //evento que se activa al pulsar una tecla
     
     screenLog3.innerText = "Carácter [" + e.key + "]\n Código "  +e.which;
     azul[0].style.background= "#CCE6FF";
